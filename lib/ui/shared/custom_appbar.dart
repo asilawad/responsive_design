@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_example/ui/shared/custom_logo.dart';
+import 'package:responsive_example/ui/shared/reponsive_image.dart';
 import 'package:responsive_example/ui/shared/responsive_text.dart';
 import 'package:responsive_example/utils/constants/color_manager.dart';
+import 'package:responsive_example/utils/constants/font_manager.dart';
 import 'package:responsive_example/utils/constants/values_manager.dart';
 import 'package:responsive_example/utils/responsive_helper/media_query_extension.dart';
 
@@ -16,55 +17,63 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          CustomLogo(),
+          Row(
+            children: [
+              CustomImage(
+                imagePath: "assets/logo.png",
+                width: context.screenWidth * .07,
+                height: context.screenWidth * .07,
+              ),
+             
+              CustomText(
+                text: "Enver",
+                fontSize: AppFontSize.s13,
+              ),
+            ],
+          ),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               TextButton(
                 onPressed: () {},
-                child: ResponsiveText(
+                child: CustomText(
                     text: "Home",
-                    style: TextStyle(fontWeight: FontWeight.w100),
-                    minFontSize: context.screenWidth * .002,
-                    maxFontSize: context.screenWidth * .003),
+                    fontWeight: FontWeight.w100,
+                    fontSize: AppFontSize.s8),
               ),
               SizedBox(width: AppWidth.w8),
               TextButton(
                 onPressed: () {},
-                child: ResponsiveText(
+                child: CustomText(
                     text: "Services",
-                    style: TextStyle(fontWeight: FontWeight.w100),
-                    minFontSize: context.screenWidth * .002,
-                    maxFontSize: context.screenWidth * .003),
+                    fontWeight: FontWeight.w100,
+                    fontSize: AppFontSize.s8),
               ),
               SizedBox(width: AppWidth.w8),
               TextButton(
                 onPressed: () {},
-                child: ResponsiveText(
+                child: CustomText(
                     text: "Our Project",
-                    style: TextStyle(fontWeight: FontWeight.w100),
-                    minFontSize: context.screenWidth * .002,
-                    maxFontSize: context.screenWidth * .003),
+                    fontWeight: FontWeight.w100,
+                    fontSize: AppFontSize.s8),
               ),
               SizedBox(width: AppWidth.w8),
               TextButton(
                 onPressed: () {},
-                child: ResponsiveText(
+                child: CustomText(
                     text: "About Us",
-                    style: TextStyle(fontWeight: FontWeight.w100),
-                    minFontSize: context.screenWidth * .002,
-                    maxFontSize: context.screenWidth * .003),
+                    fontWeight: FontWeight.w100,
+                    fontSize: AppFontSize.s8),
               ),
             ],
           ),
           FittedBox(
             child: ElevatedButton(
               onPressed: () {},
-              child: ResponsiveText(
+              child: CustomText(
                   text: "Contact Us",
-                  style: TextStyle(fontWeight: FontWeight.w100),
-                  minFontSize: context.screenWidth * .003,
-                  maxFontSize: context.screenWidth * .005),
+                  fontWeight: FontWeight.w100,
+                  fontSize: AppFontSize.s8),
               style: ElevatedButton.styleFrom(
                   primary: ColorManager.transparent,
                   side: BorderSide(

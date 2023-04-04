@@ -1,26 +1,31 @@
 import 'package:flutter/material.dart';
 
-class ResponsiveImage extends StatelessWidget {
+class CustomImage extends StatelessWidget {
   final String imagePath;
-  final double aspectRatio;
+  final double height;
   final double width;
-
-  const ResponsiveImage(
+  const CustomImage(
       {Key? key,
       required this.imagePath,
-      required this.aspectRatio,
-      required this.width})
+      required this.width,
+      required this.height})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: aspectRatio,
-      child: Image.asset(
-        imagePath,
-        fit: BoxFit.cover,
+    return Container(
+        alignment: Alignment.center,
         width: width,
-      ),
-    );
+        child: AspectRatio(
+          aspectRatio: 381 / 451,
+          child: Image.asset(imagePath),
+        ));
+
+    // Image.asset(
+    //   imagePath,
+    //   width: width,
+    //   height: height,
+    //   fit: BoxFit.cover,
+    // );
   }
 }

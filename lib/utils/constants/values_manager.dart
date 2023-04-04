@@ -10,7 +10,7 @@ class AppMargin {
 
 class AppPadding {
   static final double p24 =
-      _context.screenWidth * .034 + _context.mediaQueryPadding.left;
+      _context.screenWidth * .09 + _context.mediaQueryPadding.left;
 }
 
 class AppSize {
@@ -25,12 +25,13 @@ class AppWidth {
   static final double w625 = _context.screenWidth * 1.4;
   static final double w800 = _context.screenWidth * 2.13;
   static final double w381 = _context.screenWidth * .6;
-  static final double w83 = _context.screenWidth * .022;
-  static final double w78 = _context.screenWidth * .2;
+  static const double w130 = 130;
+  static final double w83 = _context.screenWidth * .02;
+  static final double w78 = _context.screenWidth * .23;
   static final double w24 = _context.screenWidth * .064;
   static final double w10 = _context.screenWidth * .026;
   static final double w8 = _context.screenWidth * .021;
-  static const double w130 = 130;
+  static final double w4 = _context.screenWidth * .004;
 }
 
 class AppHieght {
@@ -42,21 +43,7 @@ class AppHieght {
   static final double h66 = _context.screenHeight * .066;
   static final double h50 = _context.screenHeight * .05;
   static final double h30 = _context.screenHeight * .03;
-  static final double h22 = _context.screenHeight * .022;
-}
-
-class AppFontSize {
-  static final double s44 = _context.screenWidth * .044;
-  static final double s20 = _context.screenWidth * .02;
-  static final double s18 = _context.screenWidth * .018;
-  static final double s16 = _context.screenWidth * .016;
-  static final double s13 = _context.screenWidth * .013;
-  static final double s12 = _context.screenWidth * .012;
-  static final double s8 = _context.screenWidth * .008;
-  static final double s5 = _context.screenWidth * .005;
-  static final double s3 = _context.screenWidth * .003;
-
-  static final double s2 = _context.screenWidth * .023;
+  static final double h22 = _context.screenHeight * .036;
 }
 
 class ScreenSize {
