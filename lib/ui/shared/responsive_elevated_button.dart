@@ -30,10 +30,13 @@ class ResponsiveElevatedButton extends StatelessWidget {
             width: iconSize,
             height: iconSize,
           ),
-          label: CustomText(
-            text: text,
-            fontSize: fontSize,
-            fontWeight: FontWeight.w500,
+          label: Padding(
+            padding: EdgeInsets.symmetric(vertical: context.screenHeight* 0.001),
+            child: CustomText(
+              text: text,
+              fontSize: fontSize,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           style: ElevatedButton.styleFrom(
             backgroundColor: ColorManager.purple,

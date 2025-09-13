@@ -12,15 +12,15 @@ class MobileHomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    
+      backgroundColor: ColorManager.bockgroundColor,
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
             backgroundColor: ColorManager.bockgroundColor,
-            toolbarHeight: 100,
+            pinned: true,
+            floating: true,
+            expandedHeight: 100,
             elevation: AppSize.s0,
-            pinned: false, 
-            floating: true, 
             leading: Padding(
               padding: EdgeInsets.only(left: AppPadding.p24),
               child: const CustomLogo(),
@@ -36,7 +36,6 @@ class MobileHomeView extends StatelessWidget {
               )
             ],
           ),
-         
           SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: AppPadding.p24),
             sliver: SliverList(
