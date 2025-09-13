@@ -24,8 +24,7 @@ class CustomAppBar extends StatelessWidget {
                 width: context.screenWidth * .07,
                 height: context.screenWidth * .07,
               ),
-             
-              CustomText(
+              const CustomText(
                 text: "Enver",
                 fontSize: AppFontSize.s13,
               ),
@@ -36,7 +35,7 @@ class CustomAppBar extends StatelessWidget {
             children: [
               TextButton(
                 onPressed: () {},
-                child: CustomText(
+                child: const CustomText(
                     text: "Home",
                     fontWeight: FontWeight.w100,
                     fontSize: AppFontSize.s8),
@@ -44,7 +43,7 @@ class CustomAppBar extends StatelessWidget {
               SizedBox(width: AppWidth.w8),
               TextButton(
                 onPressed: () {},
-                child: CustomText(
+                child: const CustomText(
                     text: "Services",
                     fontWeight: FontWeight.w100,
                     fontSize: AppFontSize.s8),
@@ -52,7 +51,7 @@ class CustomAppBar extends StatelessWidget {
               SizedBox(width: AppWidth.w8),
               TextButton(
                 onPressed: () {},
-                child: CustomText(
+                child: const CustomText(
                     text: "Our Project",
                     fontWeight: FontWeight.w100,
                     fontSize: AppFontSize.s8),
@@ -60,7 +59,7 @@ class CustomAppBar extends StatelessWidget {
               SizedBox(width: AppWidth.w8),
               TextButton(
                 onPressed: () {},
-                child: CustomText(
+                child: const CustomText(
                     text: "About Us",
                     fontWeight: FontWeight.w100,
                     fontSize: AppFontSize.s8),
@@ -70,13 +69,13 @@ class CustomAppBar extends StatelessWidget {
           FittedBox(
             child: ElevatedButton(
               onPressed: () {},
-              child: CustomText(
+              child: const CustomText(
                   text: "Contact Us",
                   fontWeight: FontWeight.w100,
                   fontSize: AppFontSize.s8),
               style: ElevatedButton.styleFrom(
                   backgroundColor: ColorManager.transparent,
-                  side: BorderSide(
+                  side: const BorderSide(
                     color: ColorManager.white,
                   )),
             ),

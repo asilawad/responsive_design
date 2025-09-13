@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:responsive_example/ui/shared/responsive_text.dart';
 import 'package:responsive_example/utils/responsive_helper/media_query_extension.dart';
 import '../../utils/constants/color_manager.dart';
-import '../../utils/constants/values_manager.dart';
 
 class ResponsiveElevatedButton extends StatelessWidget {
   final String text;
@@ -39,9 +38,8 @@ class ResponsiveElevatedButton extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: ColorManager.purple,
             padding: EdgeInsets.symmetric(
-               horizontal: context.screenWidth * 0.05, 
-            vertical: context.screenHeight * 0.015,
-
+              horizontal: context.screenWidth * 0.05,
+              vertical: context.screenHeight * 0.015,
             ),
             minimumSize:
                 Size(context.screenWidth * .1, context.screenHeight * .01),

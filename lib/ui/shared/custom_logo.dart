@@ -21,7 +21,7 @@ class CustomLogo extends StatelessWidget {
           SizedBox(
             width: AppWidth.w4,
           ),
-          CustomText(
+          const CustomText(
             text: "Enver",
             fontSize: AppFontSize.s28,
           ),

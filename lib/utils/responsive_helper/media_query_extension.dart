@@ -11,8 +11,7 @@ extension MediaQueryExt on BuildContext {
   double get devicePixelRatio => MediaQuery.of(this).devicePixelRatio;
 
   double responsiveFontSize(double fontSize) {
-    return MediaQuery.of(this).textScaler.scale(fontSize);
+    return  MediaQuery.of(this). textScaler.scale(fontSize);
   }
-
   double get diviceShortestSide => mediaQuerySize.shortestSide;
 }

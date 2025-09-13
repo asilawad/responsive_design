@@ -60,8 +60,7 @@ class CustomText extends StatelessWidget {
       text,
       style: TextStyle(
         fontSize: 
-        context.responsiveFontSize(context.screenWidth * .002 * fontSize),
-
+        context.responsiveFontSize(context.screenWidth * 0.002 * fontSize),
         color: color,
         fontWeight: fontWeight,
       ),
