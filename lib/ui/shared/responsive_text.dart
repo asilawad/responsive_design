@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_example/utils/constants/values_manager.dart';
 import 'package:responsive_example/utils/responsive_helper/media_query_extension.dart';
-import '../../utils/constants/color_manager.dart';
 
 // class ResponsiveText extends StatelessWidget {
 //   final String text;
@@ -60,9 +58,10 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      textScaleFactor: context.textScaleFactor,
       style: TextStyle(
-        fontSize: context.screenWidth * .002 * fontSize,
+        fontSize: 
+        context.responsiveFontSize(context.screenWidth * .002 * fontSize),
+
         color: color,
         fontWeight: fontWeight,
       ),

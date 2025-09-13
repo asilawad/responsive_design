@@ -75,7 +75,7 @@ class CustomAppBar extends StatelessWidget {
                   fontWeight: FontWeight.w100,
                   fontSize: AppFontSize.s8),
               style: ElevatedButton.styleFrom(
-                  primary: ColorManager.transparent,
+                  backgroundColor: ColorManager.transparent,
                   side: BorderSide(
                     color: ColorManager.white,
                   )),

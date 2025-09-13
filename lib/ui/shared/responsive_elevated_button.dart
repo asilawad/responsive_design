@@ -37,10 +37,11 @@ class ResponsiveElevatedButton extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
           style: ElevatedButton.styleFrom(
-            primary: ColorManager.purple,
+            backgroundColor: ColorManager.purple,
             padding: EdgeInsets.symmetric(
-              horizontal: AppWidth.w83,
-              vertical: AppHieght.h22,
+               horizontal: context.screenWidth * 0.05, 
+            vertical: context.screenHeight * 0.015,
+
             ),
             minimumSize:
                 Size(context.screenWidth * .1, context.screenHeight * .01),
